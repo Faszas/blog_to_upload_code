@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1> This person does not exist </h1>
+{% endblock %}
+
+{% block title %}
+Gallery
+{% endblock %}
+
+{% block main %}
+    <img src="../media/gallery/person.jpg" width="200px">
+    {% for foo in obj %}
+        <a href="../media/gallery/person ({{ foo }}).jpg"><img src="../media/gallery/person ({{ foo }}).jpg" width="200px"></a>
+    {% endfor %}
+
+{% endblock %}

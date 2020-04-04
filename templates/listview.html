@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+{% endblock %}
+
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block main %}
+
+    {% for foo in obj %}
+        <a href="../../detail/{{ foo.post_id }}/">{{ foo.title }}  </a> <br>
+    {% endfor %}
+
+{% endblock %}

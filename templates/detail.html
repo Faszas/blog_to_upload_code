@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    obj.pos_id
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block main %}
+    <h1 style="text-align: center">{{ obj.title }}</h1>
+    <pre class="prettyprint linenums">
+        {{ code }}
+    </pre>
+    <a href="../../media/{{ obj.file }}" download="../{{ obj.file }}/">Click me to download</a>
+{% endblock %}
